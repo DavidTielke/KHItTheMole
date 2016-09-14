@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HitTheMole.Scenes.MainMenuScene">
+    <Position X="6.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAABAAAgAAAAACAAAIAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Scenes\MainMenuScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HitTheMole.Scenes.StaticScene">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAASAACwBAAAAAAgAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\StaticScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HitTheMole.GameLevelScene">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAAAAAAAAAAAAAAAQAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\GameLevelScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HitTheMole.Scenes.GameFinishedScene">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\GameFinishedScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HitTheMole.Scenes.GameOverScene">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\GameOverScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HitTheMole.Scenes.LevelOneDesert">
+    <Position X="4.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIAAAQAAAAAACAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\LevelOneDesert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HitTheMole.Scenes.LevelTwoForrest">
+    <Position X="2.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scenes\LevelTwoForrest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
