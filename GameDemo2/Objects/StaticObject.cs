@@ -53,10 +53,10 @@ namespace HitTheMole
 
         public virtual void Update()
         {
-            var isMouseOver = Rectangle.Contains(Game.MousePosition);
-            IsMouseEnter = !IsMouseOver && isMouseOver;
-            IsMouseLeave = IsMouseOver && !isMouseOver;
-            IsMouseOver = isMouseOver;
+            var isNowMouseOver = Rectangle.Contains(Game.MousePosition);
+            IsMouseEnter = !IsMouseOver && isNowMouseOver;
+            IsMouseLeave = IsMouseOver && !isNowMouseOver;
+            IsMouseOver = isNowMouseOver;
         }
         public virtual void Reset() { }
         public virtual void Start() { }

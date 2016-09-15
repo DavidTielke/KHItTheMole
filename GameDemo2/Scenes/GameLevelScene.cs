@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 using System.Xml.Serialization;
 
 namespace HitTheMole
@@ -22,6 +23,11 @@ namespace HitTheMole
         public override void Update()
         {
             base.Update();
+
+            if (Game.WhichKeyDown == Keys.Escape)
+            {
+                Game.ShowMainMenu();
+            }
 
             if (Game.Score >= ScoreToNextLevel)
             {

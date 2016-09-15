@@ -57,6 +57,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Game.cs" />
+    <Compile Include="Objects\Car.cs" />
     <Compile Include="Objects\Monster.cs" />
     <Compile Include="Scenes\GameFinishedScene.cs" />
     <Compile Include="Scenes\GameLevelScene.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="Scenes\LevelTwoForrest.cs" />
     <Compile Include="Scenes\MainMenuScene.cs" />
     <Compile Include="Scenes\StaticScene.cs" />
+    <Compile Include="Vector2D.cs" />
     <EmbeddedResource Include="MoleMain2.resx">
       <DependentUpon>MoleMain2.cs</DependentUpon>
     </EmbeddedResource>

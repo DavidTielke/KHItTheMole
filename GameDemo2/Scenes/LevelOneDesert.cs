@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HitTheMole.Cursors;
+using HitTheMole.Objects;
 using HitTheMole.Properties;
 
 namespace HitTheMole.Scenes
@@ -31,6 +32,9 @@ namespace HitTheMole.Scenes
 
         public override void Initialize()
         {
+            Items.Clear();
+            Items.Add(Scoreboard);
+
             var width = (int)Math.Round(Screen.PrimaryScreen.Bounds.Width / 12.8);
             var height = (int)Math.Round(Screen.PrimaryScreen.Bounds.Width / 12.8);
 
@@ -39,7 +43,15 @@ namespace HitTheMole.Scenes
 
             Items.Add(Mole);
             Items.Add(Vulture);
+            Items.Add(new Car(200,200,50,50));
+
+            for (int i = 0; i < 50; i++)
+            {
+                Items.Add(new Vulture(-width, -height, width, height));
+            }
         }
+
+        
 
     }
 }

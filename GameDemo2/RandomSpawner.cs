@@ -35,6 +35,7 @@ namespace HitTheMole
 
             do
             {
+                //ToDo Bug 0 ist falsch
                 var newX = RandomPositionX.Next(0, SpawnArea.Width - item.Size.Width) + SpawnArea.X;
                 var newY = RandomPositionY.Next(0, SpawnArea.Height - item.Size.Height) + SpawnArea.Y;
                 newPoint = new Point(newX, newY);

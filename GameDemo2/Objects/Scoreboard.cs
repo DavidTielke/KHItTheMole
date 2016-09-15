@@ -7,10 +7,12 @@ namespace HitTheMole
     {
         public Scoreboard(int x, int y, int width, int height) : base(x, y, width, height)
         {
+            this.IsVisible = true;
         }
 
         public Scoreboard(Point position, Size size) : base(position, size)
         {
+            this.IsVisible = true;
         }
 
         public override void Draw(Graphics g)

@@ -14,6 +14,8 @@ namespace HitTheMole
         public Bitmap Image { get; set; }
         public Bitmap ImageHit { get; set; }
 
+        public Vector2D Movement { get; set; }
+
         protected int _spawntime = 1800;
         protected int _amountSpawns = 0;
 
@@ -27,12 +29,14 @@ namespace HitTheMole
             WasHit = false;
             IsVisible = true;
 
+            Movement = new Vector2D(0,0);
+
             RestrictedAreas = new List<Rectangle>();
 
             RandomSpawner = new RandomSpawner(130, new Rectangle(0, Game.Panel.Height / 2, Game.Panel.Width, Game.Panel.Height / 2), RestrictedAreas);
         }
 
-        public void Move(Point newPosition)
+        public virtual void Move(Point newPosition)
         {
             Position = newPosition;
             WasHit = false;
@@ -90,6 +94,11 @@ namespace HitTheMole
         public override void Update()
         {
             base.Update();
+
+            if (!Movement.IsNullVector)
+            {
+                Position = Movement.MovePoint(Position);
+            }
 
             if (IsMouseBottonDown && !WasHit)
             {

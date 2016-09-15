@@ -118,7 +118,7 @@ namespace HitTheMole
         public static void StartGame()
         {
             Score = 0;
-            Tries = 5;
+            Tries = 50000;
             ChangeScene(Levels.First());
         }
 
