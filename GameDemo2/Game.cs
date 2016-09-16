@@ -48,8 +48,12 @@ namespace HitTheMole
             IsGameOver = false;
 
             Levels = new List<StaticScene>();
-            Levels.Add(new LevelOneDesert());
-            Levels.Add(new LevelTwoForrest());
+            if (Levels != null)
+            {
+                Levels.Add(new LevelOneDesert());
+                Levels.Add(new LevelTwoForrest());
+            }
+            
         }
 
         public static void Start()
@@ -118,7 +122,7 @@ namespace HitTheMole
         public static void StartGame()
         {
             Score = 0;
-            Tries = 50000;
+            Tries = 5;
             ChangeScene(Levels.First());
         }
 

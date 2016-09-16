@@ -22,7 +22,7 @@ namespace HitTheMole.Scenes
         }
 
         public override int ScoreToNextLevel {
-            get { return 1; } }
+            get { return 10; } }
 
         public LevelOneDesert()
         {
@@ -43,15 +43,12 @@ namespace HitTheMole.Scenes
 
             Items.Add(Mole);
             Items.Add(Vulture);
-            Items.Add(new Car(200,200,50,50));
+            //Items.Add(new Car(200,200,50,50));
 
             for (int i = 0; i < 50; i++)
             {
                 Items.Add(new Vulture(-width, -height, width, height));
             }
         }
-
-        
-
     }
 }
